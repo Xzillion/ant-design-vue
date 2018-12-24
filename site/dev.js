@@ -10,7 +10,7 @@ import Api from './components/api'
 import './components'
 import demoBox from './components/demoBox'
 import demoContainer from './components/demoContainer'
-import Test from '../components/test/index'
+import routes from './routes'
 
 Vue.use(VueClipboard)
 Vue.use(VueRouter)
@@ -21,9 +21,8 @@ Vue.component('demo-container', demoContainer)
 
 const router = new VueRouter({
   mode: 'history',
-  routes: [
-    { path: '/*', component: Test },
-  ],
+  fallback: false,
+  routes,
 })
 new Vue({
   el: '#app',

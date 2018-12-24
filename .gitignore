@@ -62,6 +62,7 @@ typings/
 dist
 lib
 es
+ant-design-vue-bdd
 site-dist
 yarn.lock
 package-lock.json
